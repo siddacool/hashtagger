@@ -1,0 +1,32 @@
+/* header */
+
+//### Create
+//+++
+
+@mixin header-part {
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: px(40);
+        @include desktopMix{
+            position: static;
+            height: initial;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
+    }
+    #title{
+        font-size: 1.3rem;
+    }
+}
+
+//---
+//### Attach
+//+++
+
+@include header-part;
+
+//---
+

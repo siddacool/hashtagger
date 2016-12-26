@@ -1,0 +1,17 @@
+{# /* Header */ #}
+
+{# //--- #}
+{# //### Create #}
+{# //+++ #}
+
+<header>
+    <div box>
+        <section gd-y="middle" gd-x="center">
+            <div id="title" itm-noFlex>
+                #Hashtagger
+            </div>
+        </section>
+    </div>
+</header>
+
+{# //--- #}

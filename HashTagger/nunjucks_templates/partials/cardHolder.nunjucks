@@ -1,0 +1,16 @@
+{# /* Card Holder */ #}
+
+{# //--- #}
+{# //### Create #}
+{# //+++ #}
+
+<div class="cardHolder" id="cardHolder">
+    <div box="small">
+        <section>
+            {% include "components/inputCard.nunjucks" %}
+            {% include "components/outputCard.nunjucks" %}
+        </section>
+    </div>
+</div>
+
+{# //--- #}

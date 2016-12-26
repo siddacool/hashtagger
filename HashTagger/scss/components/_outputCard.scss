@@ -1,0 +1,20 @@
+/* output Card */
+
+//### Create
+//+++
+
+@mixin outputCard {
+    .outputCard{
+        background-color: $uiColorSecondary;
+        color: $uiFontColorSecondary;
+    }
+}
+
+//---
+//### Attach
+//+++
+
+@include outputCard;
+
+//---
+

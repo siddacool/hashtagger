@@ -1,0 +1,17 @@
+/* Main */
+
+//### Create
+//+++
+
+@mixin main-part {
+    main{
+    }
+}
+
+//---
+//### Attach
+//+++
+
+@include main-part;
+
+//---

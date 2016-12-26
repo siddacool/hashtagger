@@ -1,0 +1,39 @@
+/* card Holder */
+
+//### Create
+//+++
+
+@mixin cardHolder-part {
+    .cardHolder {
+        font-size: 2rem;
+        article {
+            display: flex;
+            height: 50vh;
+            @include desktop {
+                height: px(400);
+            }
+        }
+        textarea {
+            padding: 1rem;
+            display: flex;
+            margin: 0;
+            border: 0;
+            width: 100%;
+            resize: none;
+            font-size: inherit;
+            font-family: inherit;
+            font-weight: inherit;
+            color: inherit;
+            background-color: transparent;
+        }
+    }
+}
+
+//---
+//### Attach
+//+++
+
+@include cardHolder-part;
+
+//---
+

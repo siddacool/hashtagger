@@ -1,0 +1,13 @@
+{# /* Input Card */ #}
+
+{# //--- #}
+{# //### Create #}
+{# //+++ #}
+
+<div itm-sDesk='50' itm-sTabLand='50' itm-sTabPort='100'>
+    <article class="inputCard">
+        <textarea id="tagInput">input</textarea>
+    </article>
+</div>
+
+{# //--- #}

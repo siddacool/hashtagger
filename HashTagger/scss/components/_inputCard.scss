@@ -1,0 +1,24 @@
+/* input Card */
+
+//### Create
+//+++
+
+@mixin inputCard {
+    .inputCard{
+        background-color: $uiColorPrimary;
+        color: $uiFontColorPrimary;
+        padding-top: px(30);
+        @include desktopMix{
+            padding-top: 0;
+        }
+    }
+}
+
+//---
+//### Attach
+//+++
+
+@include inputCard;
+
+//---
+
