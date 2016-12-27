@@ -8,6 +8,7 @@ var gulp = require('gulp'),
     
     //Html related
     nunjucksRender = require('gulp-nunjucks-render'),
+    htmlmin = require('gulp-htmlmin'),
     
     //js related
     uglify = require('gulp-uglify'),
@@ -114,6 +115,10 @@ gulp.task('nunjucks', function() {
   return gulp.src(projectName + '/nunjucks_pages/*.nunjucks')
   // Renders template with nunjucks
   .pipe(nunjucksRender())
+  .pipe(htmlmin({
+      collapseWhitespace: true,
+      removeComments: true
+  }))
   // output files in app folder
   .pipe(gulp.dest(dist + '/'))
   
