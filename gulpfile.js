@@ -130,7 +130,7 @@ var baseJs = [
     scripts + '/baseFunctions.js'
 ];
 var libJs = [
-    libjsLoc + '/example-lib.js',
+    //libjsLoc + '/example-lib.js',
 ];
 var componentsJsFiles = [
     componentsLoc + '/inputCard.js',

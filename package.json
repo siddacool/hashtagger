@@ -1,7 +1,7 @@
 {
   "name": "hashtagger",
   "version": "0.0.1",
-  "description": "convert coma separated text to hashtags",
+  "description": "regular text to hashtags and vice versa",
   "main": "gulpfile.js",
   "scripts": {
     "test": "test"
