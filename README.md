@@ -1,3 +1,3 @@
 # Hashtagger
 
-convert comma separated text to hashtags and viceversa
+#### Regular text to hashtags and vice versa.
