@@ -37,7 +37,7 @@
     <!--  Add components inside head tag after this line only ------------------>
 
     <!--google Font/s-->
-     <link href="http://fonts.googleapis.com/css?family=Roboto:400,400italic,300,100,500,700,900" rel="stylesheet" type="text/css"> 
+     <link href="https://fonts.googleapis.com/css?family=Roboto:400,400italic,300,100,500,700,900" rel="stylesheet" type="text/css"> 
     <!--google Font/s end-->
 
     <!--extra css-->
