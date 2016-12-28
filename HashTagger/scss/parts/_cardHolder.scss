@@ -15,49 +15,33 @@
         @include tabletPortrait{
             font-size: 2.5rem;
         }
-        &[data-font='medium']{
-            font-size: 1.8rem;
+        &[data-font='break.mob']{
+            font-size: 1.5rem;
             @include desktop{
-                font-size: 1.95rem;
-            }
-            @include desktopHD{
-                font-size: 2.2rem;
-            }
-            @include tabletLandscape{
-                font-size: 1.95rem;
-            }
-            @include tabletPortrait{
-                font-size: 2.3rem;
-            }
-        }
-        &[data-font='small']{
-            font-size: 1.6rem;
-            @include desktop{
-                font-size: 1.8rem;
-            }
-            @include desktopHD{
                 font-size: 2rem;
             }
-            @include tabletLandscape{
-                font-size: 1.8rem;
-            }
-            @include tabletPortrait{
+            @include desktopHD{
                 font-size: 2.3rem;
             }
+            @include tabletLandscape{
+                font-size: 2.1rem;
+            }
+            @include tabletPortrait{
+                font-size: 2.5rem;
+            }
         }
-        &[data-font='tiny']{
-            font-size: 1.3rem;
+        &[data-font='break.deskMix']{
             @include desktop{
                 font-size: 1.6rem;
             }
             @include desktopHD{
-                font-size: 1.8rem;
+                font-size: 1.7rem;
             }
             @include tabletLandscape{
                 font-size: 1.6rem;
             }
             @include tabletPortrait{
-                font-size: 2rem;
+                font-size: 1.7rem;
             }
         }
         article {

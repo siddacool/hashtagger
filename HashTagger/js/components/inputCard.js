@@ -56,14 +56,11 @@ tagInput.addEventListener('input', function () {
     }
     
     // set font size based on string length (inputVal.finale)
-    if((inputVal.finale.length >= 40) && (inputVal.finale.length <= 85)){
-        cardHolder.setAttribute('data-font','medium');
+    if((inputVal.finale.length >= 80) && (inputVal.finale.length <= 159)){
+        cardHolder.setAttribute('data-font','break.mob');
     }
-    else if((inputVal.finale.length >= 86) && (inputVal.finale.length <= 120)){
-        cardHolder.setAttribute('data-font','small');
-    }
-    else if(inputVal.finale.length >= 121){
-        cardHolder.setAttribute('data-font','tiny');
+    else if(inputVal.finale.length >= 160){
+        cardHolder.setAttribute('data-font','break.deskMix');
     }
     else {
         cardHolder.removeAttribute('data-font');
@@ -71,6 +68,6 @@ tagInput.addEventListener('input', function () {
     
     // assign final value
     tagOutput.value = inputVal.finale;
-})
+});
 
 //---
