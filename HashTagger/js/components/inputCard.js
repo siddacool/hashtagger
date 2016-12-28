@@ -56,10 +56,10 @@ tagInput.addEventListener('input', function () {
     }
     
     // set font size based on string length (inputVal.finale)
-    if((inputVal.finale.length >= 80) && (inputVal.finale.length <= 159)){
+    if((inputVal.finale.length >= 80) && (inputVal.finale.length <= 129)){
         cardHolder.setAttribute('data-font','break.mob');
     }
-    else if(inputVal.finale.length >= 160){
+    else if(inputVal.finale.length >= 130){
         cardHolder.setAttribute('data-font','break.deskMix');
     }
     else {
