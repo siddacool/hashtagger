@@ -2,7 +2,8 @@
 
 {% block content %} 
 
-{% include "partials/icons.nunjucks" %}
+<!--  icons disabled -------------------------->
+{# include "partials/icons.nunjucks" #}
 {% import 'macros/icons-macro.nunjucks' as svg %}
  <div id="wrapper">
 
