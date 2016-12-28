@@ -6,6 +6,7 @@
 @mixin cardHolder-part {
     .cardHolder {
         font-size: 2rem;
+        transition: font-size 600ms;
         @include desktopHD{
             font-size: 2.3rem;
         }
@@ -16,7 +17,7 @@
             font-size: 2.5rem;
         }
         &[data-font='break.mob']{
-            font-size: 1.5rem;
+            font-size: 1.6rem;
             @include desktop{
                 font-size: 2rem;
             }
@@ -32,16 +33,16 @@
         }
         &[data-font='break.deskMix']{
             @include desktop{
-                font-size: 1.6rem;
+                font-size: 1.7rem;
             }
             @include desktopHD{
-                font-size: 1.7rem;
+                font-size: 1.9rem;
             }
             @include tabletLandscape{
-                font-size: 1.6rem;
+                font-size: 1.7rem;
             }
             @include tabletPortrait{
-                font-size: 1.7rem;
+                font-size: 2.2rem;
             }
         }
         article {
