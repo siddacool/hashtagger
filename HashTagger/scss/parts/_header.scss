@@ -9,16 +9,25 @@
         top: 0;
         left: 0;
         width: 100vw;
-        height: px(40);
+        height: px(30);
         @include desktopMix{
             position: static;
             height: initial;
             padding-top: 2rem;
             padding-bottom: 2rem;
         }
+        &.hide{
+            display: none;
+            @include desktopMix{
+                display: initial;
+            }
+        }
     }
     #title{
-        font-size: 1.3rem;
+        font-size: 1.2rem;
+        @include desktopMix{
+            font-size: 1.5rem;
+        }
     }
 }
 

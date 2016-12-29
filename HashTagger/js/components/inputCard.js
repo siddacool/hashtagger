@@ -3,6 +3,7 @@
 //### Create
 //+++
 
+//## Output Generator
 tagInput.addEventListener('input', function () {
     var inputVal = {};
      
@@ -65,6 +66,16 @@ tagInput.addEventListener('input', function () {
     
     // assign final value
     tagOutput.value = inputVal.finale;
+});
+
+//## On focus disable logo on mobile phones
+tagInput.addEventListener('focus',function() {
+    siteHeader('disable');
+});
+
+//## On focus out re-enable logo
+tagInput.addEventListener('focusout',function() {
+    siteHeader('enable');
 });
 
 //---

@@ -36,7 +36,7 @@
             }
         }
         textarea {
-            padding: 1rem;
+            padding: 1.5rem 1rem;
             display: flex;
             margin: 0;
             border: 0;
@@ -47,6 +47,9 @@
             font-weight: inherit;
             color: inherit;
             background-color: transparent;
+            @include desktopMix{
+                padding: 0.6rem 1.1rem;
+            }
         }
     }
 }
