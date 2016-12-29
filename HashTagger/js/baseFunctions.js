@@ -9,10 +9,12 @@ function siteHeader(param){
     if(param === 'disable'){
         header.classList.add('hide');
         inputCard.classList.add('mobiInput');
+        cardHolder.classList.add('deskInput');
     }
     else{
         header.classList.remove('hide');
         inputCard.classList.remove('mobiInput');
+        cardHolder.classList.remove('deskInput');
     }
 }
 
