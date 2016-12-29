@@ -10,10 +10,17 @@
         @include desktopMix{
             section{
                 border-radius: $cardRadius;
+                box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.04);
+                transition: box-shadow 400ms ease;
             }
         }
         @include desktop {
             font-size: 2rem;
+            &.deskInput{
+                section{
+                    box-shadow: 0px 0px 16px 4px rgba(0, 0, 0, 0.07);
+                }
+            }
         }
         @include desktopHD {
             font-size: 2.3rem;
