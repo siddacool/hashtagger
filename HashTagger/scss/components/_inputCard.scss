@@ -4,12 +4,19 @@
 //+++
 
 @mixin inputCard {
-    .inputCard{
+    .inputCard {
         background-color: $uiColorPrimary;
         color: $uiFontColorPrimary;
-        padding-top: px(30);
         @include desktopMix{
-            padding-top: 0;
+            border-radius: $cardRadius 0 0 $cardRadius;
+        }
+        &.mobiInput {
+            textarea {
+                padding-top: 0.5rem;
+                @include desktop {
+                    padding: 0.6rem 1.1rem;
+                }
+            }
         }
     }
 }

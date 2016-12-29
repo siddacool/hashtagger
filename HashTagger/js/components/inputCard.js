@@ -3,6 +3,7 @@
 //### Create
 //+++
 
+//## Output Generator
 tagInput.addEventListener('input', function () {
     var inputVal = {};
      
@@ -56,11 +57,8 @@ tagInput.addEventListener('input', function () {
     }
     
     // set font size based on string length (inputVal.finale)
-    if((inputVal.finale.length >= 80) && (inputVal.finale.length <= 129)){
-        cardHolder.setAttribute('data-font','break.mob');
-    }
-    else if(inputVal.finale.length >= 130){
-        cardHolder.setAttribute('data-font','break.deskMix');
+    if(inputVal.finale.length >= 130){
+        cardHolder.setAttribute('data-font','break.desktop');
     }
     else {
         cardHolder.removeAttribute('data-font');
@@ -68,6 +66,16 @@ tagInput.addEventListener('input', function () {
     
     // assign final value
     tagOutput.value = inputVal.finale;
+});
+
+//## On focus disable logo on mobile phones
+tagInput.addEventListener('focus',function() {
+    siteHeader('disable');
+});
+
+//## On focus out re-enable logo
+tagInput.addEventListener('focusout',function() {
+    siteHeader('enable');
 });
 
 //---

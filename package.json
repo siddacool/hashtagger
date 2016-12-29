@@ -1,7 +1,7 @@
 {
   "name": "hashtagger",
   "version": "0.0.1",
-  "description": "regular text to hashtags and vice versa",
+  "description": "Make hashtags from normal text and vice versa",
   "main": "gulpfile.js",
   "scripts": {
     "test": "test"
