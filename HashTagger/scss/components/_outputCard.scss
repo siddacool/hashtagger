@@ -7,6 +7,9 @@
     .outputCard{
         background-color: $uiColorSecondary;
         color: $uiFontColorSecondary;
+        @include desktop{
+             transition: font-size 300ms ease;
+        }
     }
 }
 

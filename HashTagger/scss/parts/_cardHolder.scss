@@ -5,44 +5,27 @@
 
 @mixin cardHolder-part {
     .cardHolder {
-        font-size: 2rem;
-        transition: font-size 600ms;
-        @include desktopHD{
+        font-size: 1.6rem;
+        @include desktop {
+            font-size: 2rem;
+        }
+        @include desktopHD {
             font-size: 2.3rem;
         }
-        @include tabletLandscape{
-            font-size: 2.1rem;
+        @include tabletLandscape {
+            font-size: 1.8rem;
         }
-        @include tabletPortrait{
-            font-size: 2.5rem;
+        @include tabletPortrait {
+            font-size: 2rem;
         }
-        &[data-font='break.mob']{
-            font-size: 1.6rem;
-            @include desktop{
-                font-size: 2rem;
-            }
-            @include desktopHD{
-                font-size: 2.3rem;
-            }
-            @include tabletLandscape{
-                font-size: 2.1rem;
-            }
-            @include tabletPortrait{
-                font-size: 2.5rem;
-            }
-        }
-        &[data-font='break.deskMix']{
-            @include desktop{
-                font-size: 1.7rem;
-            }
-            @include desktopHD{
-                font-size: 1.9rem;
-            }
-            @include tabletLandscape{
-                font-size: 1.7rem;
-            }
-            @include tabletPortrait{
-                font-size: 2.2rem;
+        &[data-font='break.desktop'] {
+            .outputCard {
+                @include desktop {
+                    font-size: 1.7rem;
+                }
+                @include desktopHD {
+                    font-size: 1.9rem;
+                }
             }
         }
         article {
