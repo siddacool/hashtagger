@@ -7,6 +7,9 @@
     .inputCard {
         background-color: $uiColorPrimary;
         color: $uiFontColorPrimary;
+        @include desktopMix{
+            border-radius: $cardRadius 0 0 $cardRadius;
+        }
         &.mobiInput {
             textarea {
                 padding-top: 0.5rem;
