@@ -6,6 +6,7 @@
 @mixin cardHolder-part {
     .cardHolder {
         font-size: 1.6rem;
+        font-weight: 600;
         @include desktopMix{
             section{
                 border-radius: $cardRadius;
