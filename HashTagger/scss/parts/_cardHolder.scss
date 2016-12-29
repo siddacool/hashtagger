@@ -25,12 +25,10 @@
         @include desktopHD {
             font-size: 2.3rem;
         }
-        @include tabletLandscape {
-            font-size: 1.8rem;
-        }
-        @include tabletPortrait {
+        @include tablet {
             font-size: 2rem;
         }
+        
         &[data-font='break.desktop'] {
             .outputCard {
                 @include desktop {
