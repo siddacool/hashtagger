@@ -15,7 +15,7 @@
 //## Primary font,google font declaration
 $baseFont: 'Open Sans',Arial,Helvetica,sans-serif;
 //## Primary background color
-$baseColor: $ios-green;
+$baseColor: #eeeeee;
 //## Alternate background color
 $baseAltColor: #000;
 //## Dull background color
@@ -30,14 +30,14 @@ $fontAltColor: #ffffff;
 //+++
 
 //## ui Color Primary
-$uiColorPrimary: #eeeeee;
+$uiColorPrimary: #fff;
 //## ui Color Secondary
-$uiColorSecondary: #0c2d5d;
+$uiColorSecondary: #112b4f;
 //## ui Color Primary
 $uiFontColorPrimary: #022565;
 //## ui Color Secondary
 $uiFontColorSecondary: #faff71;
 //## card border radius
-$cardRadius: px(5);
+$cardRadius: px(4);
 
 //---
