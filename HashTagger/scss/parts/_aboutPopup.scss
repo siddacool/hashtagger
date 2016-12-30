@@ -1,0 +1,55 @@
+/* about Popup */
+
+//### Create
+//+++
+
+@mixin aboutPopup-part {
+    .aboutPopup {
+        display: none;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        background-color: $uiColorSecondary;
+        color: $uiFontColorSecondary;
+        z-index: 200;
+        left: 0;
+        top: 0;
+        opacity: 0;
+        animation: appear 300ms;
+        &.show{
+            display: block;
+            opacity: 1;
+            @keyframes appear {
+                from {
+                   opacity: 0;
+                }
+                to {
+                    opacity: 1;
+                }
+            }
+            @include desktopMix{
+                display: none;
+            }
+        }
+        .titleLong,
+        .descriptionIndex{
+            display: block;
+        }
+        .titleLong{
+            padding-top: 0.5rem;
+        }
+        .icon{
+           fill: $uiFontColorSecondary;
+            margin-right: 0.5rem;
+        }
+    }
+}
+
+//---
+//### Attach
+//+++
+
+@include aboutPopup-part;
+
+//---
+

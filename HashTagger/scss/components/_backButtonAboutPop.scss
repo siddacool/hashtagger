@@ -1,0 +1,24 @@
+/* backButtonAboutPop */
+
+//### Create
+//+++
+
+@mixin backButtonAboutPop {
+    .aboutPopup {
+        .backButton {
+            height: px(60);
+        }
+        .backButtonContents{
+            display: flex;
+        }
+    }
+}
+
+//---
+//### Attach
+//+++
+
+@include backButtonAboutPop;
+
+//---
+

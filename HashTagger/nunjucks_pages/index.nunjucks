@@ -3,15 +3,15 @@
 {% block content %} 
 
 <!--  icons disabled -------------------------->
-{# include "partials/icons.nunjucks" #}
+{% include "partials/icons.nunjucks" %}
 {% import 'macros/icons-macro.nunjucks' as svg %}
  <div id="wrapper">
 
         <!--  Add components inside body tag after this line only -------------------------->
         {% include "partials/header.nunjucks" %}
-
         <main>
            {% include "partials/cardHolder.nunjucks" %}
+           {% include "partials/aboutPopup.nunjucks" %}
         </main>
 
         <!--  stop adding components at this line only ------------------------------------->

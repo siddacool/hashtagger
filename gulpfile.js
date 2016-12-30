@@ -134,6 +134,7 @@ var libJs = [
 ];
 var componentsJsFiles = [
     componentsLoc + '/inputCard.js',
+    componentsLoc + '/aboutPop.js',
 ];
 
 var componentsStart = [componentsLoc + '/componentsStart.js'],

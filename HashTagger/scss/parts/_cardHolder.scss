@@ -10,7 +10,7 @@
         @include desktopMix{
             section{
                 border-radius: $cardRadius;
-                box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.04);
+                box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.07);
                 transition: box-shadow 400ms ease;
             }
         }
@@ -18,15 +18,23 @@
             font-size: 2rem;
             &.deskInput{
                 section{
-                    box-shadow: 0px 0px 16px 4px rgba(0, 0, 0, 0.07);
+                    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.07);
                 }
             }
         }
-        @include desktopHD {
-            font-size: 2.3rem;
-        }
         @include tablet {
             font-size: 2rem;
+        }
+        &.expand{
+            .inputCard{
+                height: 0vh;
+            }
+            .outputCard{
+                height: 100vh;
+            }
+            textarea{
+                display: none;
+            }
         }
         
         &[data-font='break.desktop'] {
@@ -34,14 +42,12 @@
                 @include desktop {
                     font-size: 1.7rem;
                 }
-                @include desktopHD {
-                    font-size: 1.9rem;
-                }
             }
         }
         article {
             display: flex;
             height: 50vh;
+            transition: height 200ms ease-out;
             @include desktop {
                 height: px(400);
             }

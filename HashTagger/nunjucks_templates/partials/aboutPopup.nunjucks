@@ -1,0 +1,19 @@
+{# /* About Popup */ #}
+
+{# //--- #}
+{# //### Create #}
+{# //+++ #}
+
+<div class="aboutPopup">
+    {% include "components/backButtonAboutPop.nunjucks" %}
+    <div box>
+        {% include "components/titleLong.nunjucks" %}
+        {% include "components/descriptionIndex.nunjucks" %}
+    </div>
+</div>
+
+{# //--- #}
+
+
+
+

@@ -1,0 +1,17 @@
+{# /* back Button AboutPop */ #}
+
+{# //--- #}
+{# //### Create #}
+{# //+++ #}
+
+<div class="backButton" id='backButtonAboutPop'>
+    <div box>
+        <section gd-y="middle">
+            <div itm-y="middle" class="backButtonContents">
+                {{svg.icon('back-arrow')}} Back
+            </div>
+        </section>
+    </div>
+</div>
+
+{# //--- #}

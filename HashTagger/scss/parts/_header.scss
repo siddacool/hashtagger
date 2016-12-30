@@ -19,47 +19,9 @@
             background-color: initial;
         }
         &.hide{
-            right: -4rem;
-            @include tabletPortrait{
-                right: -6rem;
-            }
-        }
-        .titleLong{
-            font-size: 1.2rem;
             display: none;
-            letter-spacing: 0.4px;
             @include desktopMix{
-                display: block;
-            }
-            @include desktopMix{
-                font-size: 1.5rem;
-            }
-            @include desktopHD{
-                font-size: 1.7rem;
-            }
-            strong{
-                font-size: 1.8rem;
-                font-weight: 600;
-                margin-right: 0.1rem;
-                @include desktopHD{
-                    font-size: 1.9rem;
-                }
-            }
-        }
-        .titleShort{
-            width: 3rem;
-            height: 3rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 100%;
-            background-color: #fae07a;
-            margin-left: auto;
-            box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.04);
-            font-size: 1.6rem;
-            font-weight: 600;
-            @include desktopMix{
-                display: none;
+                display: initial;
             }
         }
     }

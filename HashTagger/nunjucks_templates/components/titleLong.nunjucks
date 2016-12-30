@@ -1,0 +1,17 @@
+{# /* Title Long */ #}
+
+{# //--- #}
+{# //### Create #}
+{# //+++ #}
+
+<div class="titleLong">
+    <div box='small'>
+        <section gd-y="middle" gd-x='center'>
+            <div itm-noFlex >
+                <h1><strong>&#35;</strong>Hashtagger</h1>
+            </div>
+        </section>
+    </div>
+</div>
+
+{# //--- #}
