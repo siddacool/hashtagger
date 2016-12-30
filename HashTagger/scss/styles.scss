@@ -34,6 +34,8 @@
 @import "./parts/header";
 //## cardHolder
 @import "./parts/cardHolder";
+//## aboutPopup
+@import "./parts/aboutPopup";
 
 //---
 //### components
@@ -43,5 +45,13 @@
 @import "./components/inputCard";
 //## output Card
 @import "./components/outputCard";
+//## description Index
+@import "./components/descriptionIndex";
+//## title Long
+@import "./components/titleLong";
+//## title Long
+@import "./components/titleShort";
+//## backButtonAboutPop
+@import "./components/backButtonAboutPop";
 
 //---

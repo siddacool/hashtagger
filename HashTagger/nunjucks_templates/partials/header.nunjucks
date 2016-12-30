@@ -5,14 +5,9 @@
 {# //+++ #}
 
 <header>
-    <div box>
-        <section gd-y="middle" gd-x="right" gd-xTabLand="center" gd-xDesk="center">
-            <div id="title" itm-noFlex>
-                <span class="titleLong"><strong>#</strong>Hashtagger</span>
-                <span class="titleShort">#</span>
-            </div>
-        </section>
-    </div>
+    {% include "components/titleShort.nunjucks" %}
+    {% include "components/titleLong.nunjucks" %}
+    {% include "components/descriptionIndex.nunjucks" %}
 </header>
 
 {# //--- #}

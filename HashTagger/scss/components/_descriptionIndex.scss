@@ -1,0 +1,24 @@
+/* descriptionIndex */
+
+//### Create
+//+++
+
+@mixin descriptionIndex {
+    .descriptionIndex {
+        display: none;
+        padding-top: 0.5rem;
+        padding-bottom: 1rem;
+        @include desktopMix{
+            display: block;
+        }
+    }
+}
+
+//---
+//### Attach
+//+++
+
+@include descriptionIndex;
+
+//---
+

@@ -1,0 +1,17 @@
+{# /* Description Index */ #}
+
+{# //--- #}
+{# //### Create #}
+{# //+++ #}
+
+<div class="descriptionIndex">
+    <div box='small'>
+        <section gd-y="middle" gd-x="center">
+            <div itm-noFlex>
+                <p para>Make <strong>&#35;hashtags</strong> from normal text and vice versa.</p>
+            </div>
+        </section>
+    </div>
+</div>
+
+{# //--- #}

@@ -5,7 +5,7 @@
 
 @mixin main-part {
     #wrapper{
-        background-color: #fae07a;
+        background-color: $baseColor;
         position: relative;
     }
     main{

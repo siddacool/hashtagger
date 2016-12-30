@@ -1,0 +1,27 @@
+/* title Long */
+
+//### Create
+//+++
+
+@mixin titleLong {
+    .titleLong {
+        display: none;
+        font-weight: 600;
+        @include desktopMix {
+            display: block;
+        }
+        strong {
+            font-weight: 600;
+            margin-right: 0.1rem;
+        }
+    }
+}
+
+//---
+//### Attach
+//+++
+
+@include titleLong;
+
+//---
+
