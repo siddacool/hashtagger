@@ -10,12 +10,10 @@
         @include desktopMix{
             border-radius: $cardRadius 0 0 $cardRadius;
         }
-        &.mobiInput {
-            textarea {
-                padding-top: 0.5rem;
-                @include desktop {
-                    padding: 0.6rem 1.1rem;
-                }
+        textarea{
+            padding: 1rem 1rem;
+            @include desktopMix{
+                padding: 0.6rem 1.1rem;
             }
         }
     }

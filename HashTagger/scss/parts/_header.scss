@@ -19,9 +19,9 @@
             background-color: initial;
         }
         &.hide{
-            right: -4rem;
-            @include tabletPortrait{
-                right: -6rem;
+            display: none;
+            @include desktopMix{
+                display: initial;
             }
         }
         .titleLong{
