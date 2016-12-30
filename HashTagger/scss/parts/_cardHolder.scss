@@ -25,6 +25,17 @@
         @include tablet {
             font-size: 2rem;
         }
+        &.expand{
+            .inputCard{
+                height: 0vh;
+            }
+            .outputCard{
+                height: 100vh;
+            }
+            textarea{
+                display: none;
+            }
+        }
         
         &[data-font='break.desktop'] {
             .outputCard {
@@ -36,6 +47,7 @@
         article {
             display: flex;
             height: 50vh;
+            transition: height 200ms ease-out;
             @include desktop {
                 height: px(400);
             }

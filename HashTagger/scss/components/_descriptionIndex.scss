@@ -6,7 +6,7 @@
 @mixin descriptionIndex {
     .descriptionIndex {
         display: none;
-        padding-top: 0.5rem;
+        padding-top: 0.7rem;
         padding-bottom: 1rem;
         @include desktopMix{
             display: block;
