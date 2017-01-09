@@ -6,7 +6,7 @@
 
 <div itm-sDesk='50' itm-sTabLand='50' itm-sTabPort='100'>
     <article class="outputCard">
-        <textarea id="tagOutput" readonly>Output </textarea>
+        <textarea id="tagOutput" placeholder="Output" readonly></textarea>
     </article>
 </div>
 

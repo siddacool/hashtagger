@@ -26,7 +26,7 @@ $sys-fontHighlight: #007AFF;
 //## H1
 @mixin h1 {
     h1 {
-        font-size: 2.45rem;
+        font-size: 2.7rem;
         font-weight: 400;
         letter-spacing: -.04rem;
         line-height: 1.2;
@@ -116,11 +116,11 @@ $sys-fontHighlight: #007AFF;
 //## Para
 @mixin para {
     p[para] {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         line-height: 1.6;
         font-weight: 400;
         @include desktopMixEx {
-            font-size: 1.3rem;
+            font-size: 1.4rem;
             letter-spacing: -.005rem;
         }
     }

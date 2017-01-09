@@ -4,11 +4,23 @@
 //+++
 
 @mixin main-part {
-    #wrapper{
+    #wrapper {
         background-color: $baseColor;
         position: relative;
     }
     main{
+    }
+    ::-webkit-input-placeholder {
+        color: inherit;
+    }
+    :-moz-placeholder {
+        color: inherit;
+    }
+    ::-moz-placeholder {
+        color: inherit;
+    }
+    :-ms-input-placeholder {
+        color: inherit;
     }
 }
 
