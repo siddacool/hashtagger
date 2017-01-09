@@ -4,25 +4,24 @@
 //+++
 
 @mixin main-part {
-    #wrapper{
+    #wrapper {
         background-color: $baseColor;
         position: relative;
     }
     main{
     }
-    
-    ::-webkit-input-placeholder { /* WebKit browsers */
-    color:inherit;
-}
-:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-    color:inherit;
-}
-::-moz-placeholder { /* Mozilla Firefox 19+ */
-    color:inherit;
-}
-:-ms-input-placeholder { /* Internet Explorer 10+ */
-    color:inherit;
-}
+    ::-webkit-input-placeholder {
+        color: inherit;
+    }
+    :-moz-placeholder {
+        color: inherit;
+    }
+    ::-moz-placeholder {
+        color: inherit;
+    }
+    :-ms-input-placeholder {
+        color: inherit;
+    }
 }
 
 //---

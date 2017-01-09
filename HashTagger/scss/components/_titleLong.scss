@@ -7,11 +7,14 @@
     .titleLong {
         display: none;
         font-weight: 600;
+        h1{
+            font-family: $altFont;
+            font-weight: 700;
+        }
         @include desktopMix {
             display: block;
         }
         strong {
-            font-weight: 600;
             margin-right: 0.1rem;
         }
     }
