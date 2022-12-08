@@ -1,0 +1,23 @@
+{
+  "name": "hashtagger",
+  "version": "0.0.0",
+  "description": "Make hashtags from normal text and vice versa.",
+  "scripts": {
+    "start": "vite",
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "rome": "^11.0.0",
+    "typescript": "^4.8.2",
+    "vite": "^3.0.9",
+    "vite-plugin-solid": "^2.3.0",
+    "vite-tsconfig-paths": "^4.0.1"
+  },
+  "dependencies": {
+    "solid-js": "^1.5.1",
+    "solid-styled-components": "^0.28.5"
+  }
+}
