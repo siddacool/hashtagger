@@ -14,7 +14,7 @@ const ButtonStyled = styled("button")`
   background-color: var(--color-vibrant-1);
   transition: background-color 100ms;
   color: inherit;
-  font-weight: 500;
+  font-weight: 600;
 
   &:hover {
     background-color: var(--color-vibrant-1-dark);
@@ -25,8 +25,8 @@ const ButtonStyled = styled("button")`
   }
 
   & svg {
-    height: 1.2rem;
-    width: 1.2rem;
+    height: 1.4rem;
+    width: 1.4rem;
     margin-right: 5px;
   }
 `;
