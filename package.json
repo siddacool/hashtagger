@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview",
-    "deploy": "pnpm build && ./deploy.sh"
+    "gh:deploy": "pnpm build && ./deploy.sh"
   },
   "license": "MIT",
   "devDependencies": {
