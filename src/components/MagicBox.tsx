@@ -10,6 +10,7 @@ const TextBoxEnclosure = styled("section")`
   margin: 0 auto;
   max-width: 700px;
   flex-direction: column;
+  position: relative;
 `;
 
 const TextArea = styled("textarea")`
@@ -19,6 +20,7 @@ const TextArea = styled("textarea")`
   display: flex;
   flex: 1;
   padding: 16px;
+  padding-bottom: 70px;
   font-size: 1.4rem;
   font-family: inherit;
   background-color: var(--color-dark-1);

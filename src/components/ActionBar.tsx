@@ -9,8 +9,11 @@ import RefreshIcon from "./Icons/RefreshIcon";
 
 const ActionBarStyled = styled("div")`
   display: flex;
-  padding: 16px 0;
+  padding: 16px;
   justify-content: flex-end;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 
   &.inputFocsed {
     @media (max-width: 600px) {
@@ -52,6 +55,7 @@ const ActionBar: Component = () => {
         <DuplicateIcon />
         Copy
       </Button>
+
       <Button onClick={handleClear}>
         <CloseIcon />
         Clear
