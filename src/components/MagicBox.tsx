@@ -1,11 +1,6 @@
-import { Component } from "solid-js";
+import { Component, Show } from "solid-js";
 import { styled } from "solid-styled-components";
-import {
-  inputFocused,
-  inputValue,
-  setInputFocused,
-  setInputValue,
-} from "~/store";
+import { inputValue, setInputFocused, setInputValue } from "~/store";
 import { ChangeEvent } from "~/types";
 import { textConverter } from "~/utils";
 import ActionBar from "./ActionBar";
@@ -73,7 +68,10 @@ const MagicBox: Component = () => {
         onFocus={handleFcous}
         onBlur={handleBlur}
       />
-      <ActionBar />
+
+      <Show when={inputValue().trim() !== ""}>
+        <ActionBar />
+      </Show>
     </TextBoxEnclosure>
   );
 };
