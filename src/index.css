@@ -1,12 +1,12 @@
 :root {
   --color-light-1: aliceblue;
 
-  --color-dark-1: #17354f;
-  --color-dark-2: #073e6e;
+  --color-dark-1: #18247f;
+  --color-dark-2: #0d1fab;
 
-  --color-vibrant-1: #edcb4f;
-  --color-vibrant-1-dark: #d7b848;
-  --color-vibrant-1-light: #ffcb0e;
+  --color-vibrant-1: #c6ed4f;
+  --color-vibrant-1-dark: #b8dc49;
+  --color-vibrant-1-light: #aeed4f;
 }
 
 * {
