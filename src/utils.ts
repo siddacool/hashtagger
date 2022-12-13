@@ -16,6 +16,10 @@ const makeRegularText = (text: string) =>
 export const textConverter = (text: string) => {
   let finalText = "";
 
+  if (text.trim() === "") {
+    return "";
+  }
+
   if (text.includes("#")) {
     finalText = makeRegularText(text);
   } else {

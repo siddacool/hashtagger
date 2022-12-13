@@ -1,11 +1,15 @@
-import { Component, createSignal } from "solid-js";
+import { Component } from "solid-js";
 import { styled } from "solid-styled-components";
+import { inputValue, setInputValue } from "~/store";
+import { ChangeEvent } from "~/types";
 import { textConverter } from "~/utils";
+import ActionBar from "./ActionBar";
 
 const TextBoxEnclosure = styled("section")`
   display: flex;
   margin: 0 auto;
   max-width: 700px;
+  flex-direction: column;
 `;
 
 const TextArea = styled("textarea")`
@@ -27,28 +31,20 @@ const TextArea = styled("textarea")`
 `;
 
 const MagicBox: Component = () => {
-  const [value, setValue] = createSignal("");
-  const [isPasted, setIsPasted] = createSignal(false);
-
   const handlePaste = (e: ClipboardEvent) => {
     e.stopPropagation();
     e.preventDefault();
-
-    setIsPasted(true);
 
     const { clipboardData } = e;
     const pastedText = clipboardData?.getData("text") || "";
     const processedText = textConverter(pastedText);
 
-    setValue(processedText);
+    setInputValue(processedText);
   };
 
-  const handleInput = (e: { currentTarget: { value: string } }) => {
-    setIsPasted(false);
-    setValue(e.currentTarget.value);
+  const handleInput = (e: ChangeEvent) => {
+    setInputValue(e.currentTarget.value);
   };
-
-  const handleBlur = () => {};
 
   return (
     <TextBoxEnclosure>
@@ -60,9 +56,9 @@ const MagicBox: Component = () => {
         placeholder="Ctrl + p (paste) to see it in action"
         onPaste={handlePaste}
         onChange={handleInput}
-        onBlur={handleBlur}
-        value={value()}
+        value={inputValue()}
       />
+      <ActionBar />
     </TextBoxEnclosure>
   );
 };
