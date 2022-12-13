@@ -62,7 +62,7 @@ const MagicBox: Component = () => {
         name="paste-box"
         id="paste-box"
         cols="30"
-        rows="10"
+        rows="9"
         placeholder="Ctrl + p (paste) to see it in action"
         onPaste={handlePaste}
         onChange={handleInput}
