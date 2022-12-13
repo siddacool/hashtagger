@@ -1,6 +1,11 @@
 import { Component } from "solid-js";
 import { styled } from "solid-styled-components";
-import { inputValue, setInputValue } from "~/store";
+import {
+  inputFocused,
+  inputValue,
+  setInputFocused,
+  setInputValue,
+} from "~/store";
 import { ChangeEvent } from "~/types";
 import { textConverter } from "~/utils";
 import ActionBar from "./ActionBar";
@@ -46,6 +51,14 @@ const MagicBox: Component = () => {
     setInputValue(e.currentTarget.value);
   };
 
+  const handleFcous = () => {
+    setInputFocused(true);
+  };
+
+  const handleBlur = () => {
+    setInputFocused(false);
+  };
+
   return (
     <TextBoxEnclosure>
       <TextArea
@@ -57,6 +70,8 @@ const MagicBox: Component = () => {
         onPaste={handlePaste}
         onChange={handleInput}
         value={inputValue()}
+        onFocus={handleFcous}
+        onBlur={handleBlur}
       />
       <ActionBar />
     </TextBoxEnclosure>

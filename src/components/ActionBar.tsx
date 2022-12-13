@@ -1,6 +1,6 @@
 import { Component } from "solid-js";
 import { styled } from "solid-styled-components";
-import { inputValue, setInputValue } from "~/store";
+import { inputFocused, inputValue, setInputValue } from "~/store";
 import { textConverter } from "~/utils";
 import Button from "./Button";
 import CloseIcon from "./Icons/CloseIcon";
@@ -11,6 +11,12 @@ const ActionBarStyled = styled("div")`
   display: flex;
   padding: 16px 0;
   justify-content: flex-end;
+
+  &.inputFocsed {
+    @media (max-width: 600px) {
+      display: none;
+    }
+  }
 
   & button {
     margin-left: 16px;
@@ -37,7 +43,7 @@ const ActionBar: Component = () => {
   };
 
   return (
-    <ActionBarStyled>
+    <ActionBarStyled classList={{ inputFocsed: inputFocused() }}>
       <Button onClick={handleConvert}>
         <RefreshIcon />
         Convert
